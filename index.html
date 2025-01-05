@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaishu Shito</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0;
+            margin-left: 40px;
+            padding: 40px 20px;
+            display: flex;
+            gap: 60px;
+        }
+
+        .sidebar {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .subscribe-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .email-subscribe {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4267B2;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .email-subscribe:hover {
+            background-color: #365899;
+            text-decoration: none;
+        }
+
+        article {
+            margin-bottom: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #eee;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+        article h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        article p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .post-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #3b5998;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .search-box {
+            padding: 8px;
+            width: 200px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>
+                <h1>BlogKai</h1>
+            </header>
+            <div class="subscribe-buttons">
+                <a href="mailto:subscribe@blogkai.org" class="email-subscribe">Subscribe by Email</a>
+                <a href="https://twitter.com/kai_postv" class="twitter-follow-button" data-show-count="false">Follow @kai_postv</a>
+            </div>
+            <input type="text" class="search-box" placeholder="Search this site...">
+        </div>
+
+        <div class="main-content">
+            <article>
+                <h2>GPT-4V(ision)はAIに新しい扉を開く</h2>
+                <div class="post-date">2025年1月5日</div>
+                <p>AIシステムの進化は目覚ましく、特にGPT-4の視覚理解能力は革新的です。
+                テキストだけでなく、画像を理解し、それに基づいて応答できる
+                この技術は、私たちのコンピューターとの対話方法を根本的に変えるかもしれません。</p>
+                <p>最近のAIモデルの進化は、特に視覚理解の分野で顕著な成果を上げています。
+                従来のモデルが単純な画像認識や物体検出に限られていたのに対し、
+                GPT-4Vは画像の文脈を理解し、それについて詳細な議論ができます。</p>
+                <p>この技術革新は、教育、医療、科学研究など、様々な分野に大きな影響を
+                もたらすでしょう。視覚情報とテキストを組み合わせた理解により、
+                より自然で効果的なコミュニケーションが可能になります。</p>
+            </article>
+
+            <article>
+                <h2>シンプルな技術が最高の解決策</h2>
+                <div class="post-date">2025年1月3日</div>
+                <p>時として、最もシンプルな解決策が最も効果的です。
+                複雑さを追求する前に、本当に必要な機能は何かを考える必要があります。</p>
+                <p>技術の世界では、往々にして複雑な解決策を求めがちです。
+                しかし、実際のユーザーのニーズを深く理解すると、
+                シンプルな解決策こそが最も価値があることが分かります。</p>
+                <p>このブログ自体もその原則に従っています。必要最小限の機能に
+                焦点を当て、読者が本当に求めているものー内容そのものに
+                集中できる環境を提供することを目指しています。</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- Twitter Follow Button Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
